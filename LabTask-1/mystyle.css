@@ -1,0 +1,9 @@
+body {
+    background-color: lightblue; font-family:Georgia, 'Times New Roman', Times, serif;
+  }
+  
+  h1 {
+    color: navy;
+    margin-left: 20px;
+  }
+  p {font-size:100%; color:ivory; font-family:Arial, Helvetica, sans-serif}
