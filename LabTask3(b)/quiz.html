@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content="width=device-width, initial-scale=1.0">
+  <title>Interactive Quiz On HTML And CSS</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="quiz-container">
+  <h2>Interactive Text Quiz</h2>
+  
+  <p id="question"></p>
+  <input type="text" id="answer" placeholder="Your Answer">
+  <br><br>
+  
+  <button onclick="prevQuestion()">Previous Question</button>
+  <button onclick="checkAnswer()">Submit Answer</button>
+  <button onclick="nextQuestion()" id="nextBtn">Next Question</button>
+  
+  <p id="result"></p>
+</div>
+
+<script>
+  var currentQuestionIndex = 0;
+  var questions = [
+    { question: 'What HTML tag makes a link?', answer: '<a>' },
+    { question: 'What HTML tag makes a new line?', answer: '<br>' },
+    { question: ' Which tag is used when creating a list with a specific order', answer: '<ol>' },
+    { question: ' Which tag is used when creating a list without a specific order', answer: '<ul>' },
+    { question: ' Which tag would you generally use to make a list of items that have no particular order', answer: '<ul>' },
+    { question: ' Where in an HTML document is the correct place to include CSS in your HTML?', answer: ' In the <head> section' } 
+  ];
+
+  function displayQuestion() {
+    var questionContainer = document.getElementById('question');
+    questionContainer.textContent = questions[currentQuestionIndex].question;
+    if (currentQuestionIndex === questions.length - 1) {
+      document.getElementById('nextBtn').style.display = 'none';
+    } else {
+      document.getElementById('nextBtn').style.display = 'inline-block';
+    }
+  }
+
+  function checkAnswer() {
+    var userAnswer = document.getElementById('answer').value.toLowerCase();
+    var correctAnswer = questions[currentQuestionIndex].answer;
+    var resultContainer = document.getElementById('result');
+
+    if (userAnswer === correctAnswer) {
+      resultContainer.textContent = 'Correct! Well done.';
+    } else {
+      resultContainer.textContent = 'Incorrect. The correct answer is ' + correctAnswer + '.';
+    }
+
+    if (currentQuestionIndex === questions.length - 1) {
+      showResult();
+    }
+  }
+
+  function prevQuestion() {
+    if (currentQuestionIndex > 0) {
+      currentQuestionIndex--;
+      displayQuestion();
+      resetQuiz();
+    }
+  }
+
+  function nextQuestion() {
+    if (currentQuestionIndex < questions.length - 1) {
+      currentQuestionIndex++;
+      displayQuestion();
+      resetQuiz();
+    }
+  }
+
+  function resetQuiz() {
+    document.getElementById('answer').value = '';
+    document.getElementById('result').textContent = '';
+  }
+
+  function showResult() {
+    var correctCount = 0;
+
+    for (var i = 0; i < questions.length; i++) {
+      var userAnswer = document.getElementById('answer' + i).value.toLowerCase();
+      var correctAnswer = questions[i].answer;
+
+      if (userAnswer === correctAnswer) {
+        correctCount++;
+      }
+    }
+
+    var resultContainer = document.getElementById('result');
+    resultContainer.textContent = 'You got ' + correctCount + ' out of ' + questions.length + ' correct!';
+  }
+
+  displayQuestion();
+</script>
+
+</body>
+</html>
