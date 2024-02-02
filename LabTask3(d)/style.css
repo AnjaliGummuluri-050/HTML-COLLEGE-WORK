@@ -1,0 +1,26 @@
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+
+  body {  background-color: rgb(187, 184, 251);color:rgba(53, 7, 172, 0.718)}
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td {
+    height: 50px;
+    vertical-align: bottom;
+  }
+
+  button {
+    cursor:grabbing; 
+    border: 1px solid #3498db; 
+    background-color: transparent; 
+    height: 20px; 
+    width: 60px; 
+    color: #3498db;  
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6); 
+} 

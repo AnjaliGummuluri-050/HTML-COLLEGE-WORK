@@ -1,0 +1,101 @@
+<html>
+    <head>
+        <title>FormValidation</title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            .center{ margin-left:auto; margin-right:auto}
+        </style>
+    </head>
+    <body>
+    <table class="center">
+        <tr>
+            <td>NAME:</td>
+            <td><input type="text" id="name"></td>
+            <td id="error1"></td>
+        </tr>
+        <tr>
+            <td>PASSWORD:</td>
+            <td><input type="password" id="p"></td>
+            <td id="error2"></td>
+        </tr>
+            <td>EMAIL:</td>
+            <td><input type="email" id="email"></td>
+            <td id="error3"></td>
+        </tr>
+        <tr>
+            <td>PHONE NUMBER:</td>
+            <td><input type="text" id="ph"></td>
+            <td id="error4"></td>
+        </tr>
+        <tr>
+            <td>DATE OF BIRTH:</td>
+            <td><input type="date" id="dt"></td>
+        </tr>
+    </table>
+    <button onclick="validate()">Submit</button>
+    <script type="text/javascript">
+        function validate() 
+        {
+            // Password Validation
+            let pword = document.getElementById("p").value;
+
+            if (pword.length < 8 || !/[A-Z]/.test(pword) || !/[a-z]/.test(pword) || !/\d/.test(pword) || !/[^a-zA-Z\d]/.test(pword)) 
+            {
+                document.getElementById("error2").innerHTML = "Password should be at least 8 characters long and contain at least one uppercase letter, one lowercase letter, one number, and one special character.";
+            } else 
+            {
+                document.getElementById("error2").innerHTML = "Input is valid";
+            }
+
+            //Email Validation
+            var e = document.getElementById("email").value;
+            var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+            if (!e.match(validRegex))
+            {
+                document.getElementById("error3").innerHTML= "Input has to be in the format username@domain.extension";
+            }
+            else
+            {
+                document.getElementById("error3").innerHTML= "Input is valid.";
+            }
+
+            //Phone Number Validation
+            var phone = document.getElementById("ph").value;
+            var phoneno = /^\d{10}$/;
+
+            if (phone.match(phoneno)) 
+            {
+                document.getElementById("error4").innerHTML = "Input is valid.";
+            } else 
+            {
+            document.getElementById("error4").innerHTML = "The phone number must contain 10 digits.";
+            }
+
+            // Name Validation
+            let text;
+            var nameInput = document.getElementById("name").value;
+            var l = nameInput.length;
+
+            if (l < 3)
+            {
+                text = "Name should be at least 3 characters long.";
+                document.getElementById("error1").innerHTML = text;
+                return;
+            }
+
+            for (let i = 0; i < l; i++) {
+                if (!isAlphabet(nameInput[i])) 
+                {
+                    text = "Name should contain only alphabets without any special characters or numerical values.";
+                    document.getElementById("error1").innerHTML = text;
+                    return;
+                }
+            }
+        }
+        function isAlphabet(char) 
+        {
+            return /^[a-zA-Z]+$/.test(char);
+        }
+    </script>
+    </body>
+</html>
