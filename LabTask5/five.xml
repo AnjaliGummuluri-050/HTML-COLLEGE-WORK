@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="Task5.xsl"?>
+<glasses_data>
+    <brand id="1">
+        <name>Ray-Ban</name>
+        <price>150.00</price>
+        <frame_material>Metal</frame_material>
+        <lens_type>Polarized</lens_type>
+    </brand>
+    <brand id="2">
+        <name>Oakley</name>
+        <price>120.00</price>
+        <frame_material>Plastic</frame_material>
+        <lens_type>Prizm</lens_type>
+    </brand>
+    <brand id="3">
+        <name>Prada</name>
+        <price>250.00</price>
+        <frame_material>Acetate</frame_material>
+        <lens_type>Gradient</lens_type>
+    </brand>
+    <brand id="4">
+        <name>Tom Ford</name>
+        <price>300.00</price>
+        <frame_material>Metal/Acetate</frame_material>
+        <lens_type>Mirrored</lens_type>
+    </brand>
+    <brand id="5">
+        <name>Versace</name>
+        <price>180.00</price>
+        <frame_material>Plastic/Metal</frame_material>
+        <lens_type>UV Protection</lens_type>
+    </brand>
+    <brand id="6">
+        <name>Michael Kors</name>
+        <price>130.00</price>
+        <frame_material>Acetate</frame_material>
+        <lens_type>Gradient</lens_type>
+    </brand>
+    <brand id="7">
+        <name>Giorgio Armani</name>
+        <price>220.00</price>
+        <frame_material>Metal</frame_material>
+        <lens_type>UV Protection</lens_type>
+    </brand>
+    <brand id="8">
+        <name>Chanel</name>
+        <price>350.00</price>
+        <frame_material>Plastic/Metal</frame_material>
+        <lens_type>Polarized</lens_type>
+    </brand>
+    <brand id="9">
+        <name>Burberry</name>
+        <price>200.00</price>
+        <frame_material>Acetate</frame_material>
+        <lens_type>Prizm</lens_type>
+    </brand>
+    <brand id="10">
+        <name>Gucci</name>
+        <price>280.00</price>
+        <frame_material>Metal</frame_material>
+        <lens_type>Mirrored</lens_type>
+    </brand>
+    <brand id="11">
+        <name>Emporio Armani</name>
+        <price>180.00</price>
+        <frame_material>Plastic</frame_material>
+        <lens_type>Gradient</lens_type>
+    </brand>
+    <brand id="12">
+        <name>Polo Ralph Lauren</name>
+        <price>160.00</price>
+        <frame_material>Acetate</frame_material>
+        <lens_type>UV Protection</lens_type>
+    </brand>
+    <brand id="13">
+        <name>DolceAndGabbana</name>
+        <price>260.00</price>
+        <frame_material>Metal/Acetate</frame_material>
+        <lens_type>Polarized</lens_type>
+    </brand>
+    <brand id="14">
+        <name>Fendi</name>
+        <price>240.00</price>
+        <frame_material>Plastic/Metal</frame_material>
+        <lens_type>Prizm</lens_type>
+    </brand>
+    <brand id="15">
+        <name>Coach</name>
+        <price>150.00</price>
+        <frame_material>Acetate</frame_material>
+        <lens_type>Gradient</lens_type>
+    </brand>
+    <brand id="16">
+        <name>Jimmy Choo</name>
+        <price>190.00</price>
+        <frame_material>Metal</frame_material>
+        <lens_type>UV Protection</lens_type>
+    </brand>
+    <brand id="17">
+        <name>Montblanc</name>
+        <price>320.00</price>
+        <frame_material>Plastic/Metal</frame_material>
+        <lens_type>Polarized</lens_type>
+    </brand>
+    <brand id="18">
+        <name>Maui Jim</name>
+        <price>270.00</price>
+        <frame_material>Acetate</frame_material>
+        <lens_type>Prizm</lens_type>
+    </brand>
+    <brand id="19">
+        <name>Calvin Klein</name>
+        <price>170.00</price>
+        <frame_material>Metal</frame_material>
+        <lens_type>Mirrored</lens_type>
+    </brand>
+    <brand id="20">
+        <name>Carrera</name>
+        <price>140.00</price>
+        <frame_material>Plastic</frame_material>
+        <lens_type>UV Protection</lens_type>
+    </brand>
+</glasses_data>
