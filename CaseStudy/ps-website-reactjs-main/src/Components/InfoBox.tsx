@@ -1,10 +1,10 @@
 import React, { useRef, useEffect } from "react";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 
 interface InfoBoxProps {
   title: string;
   description: string;
-  animationName: string; // Name of the animation to apply (optional, "fadeIn" used by default)
+  animationName: string; 
 }
 
 const InfoBox: React.FC<InfoBoxProps> = ({
