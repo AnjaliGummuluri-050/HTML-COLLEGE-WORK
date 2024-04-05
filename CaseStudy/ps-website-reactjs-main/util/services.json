@@ -1,0 +1,36 @@
+{
+  "services": [
+    {
+      "serviceName": "Industrial Automation",
+      "icon": "fa-regular fa-industry"
+    },
+    {
+      "serviceName": "Educational Services",
+      "icon": "fa-regular fa-user-graduate"
+    },
+    {
+      "serviceName": "Web Development Services",
+      "icon": "fa-regular fa-code"
+    },
+    {
+      "serviceName": "GIS SOLUTIONS AND APPLICATION DEVELOPMENT",
+      "icon": "fa-regular fa-globe"
+    },
+    {
+      "serviceName": "Custom Application Development",
+      "icon": "fa-regular fa-computer"
+    },
+    {
+      "serviceName": "Software Testing and QA services",
+      "icon": "fa-regular fa-bug"
+    },
+    {
+      "serviceName": "Mobile Application Development",
+      "icon": "fa-regular fa-mobile"
+    },
+    {
+      "serviceName": "Software consulting and Training services",
+      "icon": "fa-regular fa-handshake"
+    }
+  ]
+}

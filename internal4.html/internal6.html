@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Countries and their capitals</title>
+    <style>
+        body {
+            background-color: lightblue;
+            font-family: Arial, sans-serif;
+        }
+        select, p {
+            font-size: 16px;color:blue
+        }
+        #capital {
+            color: blue;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        h1 {
+            font-family: 'Times New Roman', Times, serif; font-size:30px; color:green
+            }
+    </style>
+</head>
+<body>
+    <h1>Select a country to have it's capital displayed:</h1>
+    <label for="country">Country:</label>
+    <select id="country" onchange="displayCapital()">
+        <option value="">Select a country</option>
+        <option value="USA">United States</option>
+        <option value="Germany">Germany</option>
+        <option value="India">India</option>
+        <option value="Japan">Japan</option>
+        <option value="Poland">Poland</option>
+    </select>
+    <p id="capital"></p>
+
+    <script>
+        function displayCapital() {
+            var country = document.getElementById("country").value;
+            var capital = "";
+
+            switch(country) {
+                case "USA":
+                    capital = "Washington, D.C.";
+                    break;
+                case "Germany":
+                    capital = "Berlin";
+                    break;
+                case "India":
+                    capital = "Delhi";
+                    break;
+                case "Japan":
+                    capital = "Tokyo";
+                    break;
+                case "Poland":
+                    capital = "Warsow";
+                    break;
+                default:
+                    capital = "";
+            }
+
+            document.getElementById('capital').innerHTML = capital;
+        }
+    </script>
+</body>
+</html>
