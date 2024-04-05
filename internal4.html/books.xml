@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<users>
+    <user>
+        <type>Student</type>
+        <name>John Doe</name>
+        <age>20</age>
+        <gender>Male</gender>
+        <email>john.doe@example.com</email>
+    </user>
+    <user>
+        <type>Faculty</type>
+        <name>Jane Smith</name>
+        <age>35</age>
+        <gender>Female</gender>
+        <email>jane.smith@example.com</email>
+    </user>
+    <user>
+        <type>Student</type>
+        <name>Alice Johnson</name>
+        <age>22</age>
+        <gender>Female</gender>
+        <email>alice.johnson@example.com</email>
+    </user>
+    <user>
+        <type>Faculty</type>
+        <name>Bob Williams</name>
+        <age>40</age>
+        <gender>Male</gender>
+        <email>bob.williams@example.com</email>
+    </user>
+    <user>
+        <type>Student</type>
+        <name>Emily Brown</name>
+        <age>21</age>
+        <gender>Female</gender>
+        <email>emily.brown@example.com</email>
+    </user>
+    <user>
+        <type>Faculty</type>
+        <name>Michael Johnson</name>
+        <age>45</age>
+        <gender>Male</gender>
+        <email>michael.johnson@example.com</email>
+    </user>
+    <user>
+        <type>Student</type>
+        <name>David Wilson</name>
+        <age>23</age>
+        <gender>Male</gender>
+        <email>david.wilson@example.com</email>
+    </user>
+    <user>
+        <type>Faculty</type>
+        <name>Sarah Lee</name>
+        <age>38</age>
+        <gender>Female</gender>
+        <email>sarah.lee@example.com</email>
+    </user>
+    <user>
+        <type>Student</type>
+        <name>Emma Garcia</name>
+        <age>24</age>
+        <gender>Female</gender>
+        <email>emma.garcia@example.com</email>
+    </user>
+    <user>
+        <type>Faculty</type>
+        <name>Christopher Martinez</name>
+        <age>50</age>
+        <gender>Male</gender>
+        <email>christopher.martinez@example.com</email>
+    </user>
+</users>
